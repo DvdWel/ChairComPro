@@ -14,9 +14,9 @@ public class InsertIntoSQL {
         Connection conn = null;
         String driver = "com.mysql.cj.jdbc.Driver";
         // MySQL connection string, pas zonodig het pad aan:
-        String connection = "jdbc:mysql://localhost:3306/vb1?serverTimezone=UTC";
-        String user = "microbit";
-        String password = "geheim";
+        String connection = "jdbc:mysql://localhost";
+        String user = "root";
+        String password = "";
         try {
             Class.forName(driver);
             conn = DriverManager.getConnection(connection, user, password);
